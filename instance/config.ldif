@@ -807,3 +807,25 @@ objectclass: ads-base
 objectclass: top
 ads-saslMechName: SIMPLE
 ads-enabled: TRUE
+
+dn: dc=emis
+objectClass: extensibleObject
+objectClass: domain
+objectClass: top
+dc: emis
+
+dn: dc=nightingale,dc=emis
+objectClass: extensibleObject
+objectClass: domain
+objectClass: top
+dc: nightingale
+
+dn: ou=Users,dc=nightingale,dc=emis
+objectClass: organizationalUnit
+objectClass: top
+ou: Users
+
+dn: ou=Groups,dc=nightingale,dc=emis
+objectClass: organizationalUnit
+objectClass: top
+ou: Groups
