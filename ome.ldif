@@ -1,23 +1,23 @@
 version: 1
 
-dn: dc=org
+dn: dc=emis
 objectClass: extensibleObject
 objectClass: domain
 objectClass: top
-dc: org
+dc: emis
 
-dn: dc=openmicroscopy,dc=org
+dn: dc=nightingale,dc=emis
 objectClass: extensibleObject
 objectClass: domain
 objectClass: top
-dc: openmicroscopy
+dc: nightingale
 
-dn: ou=Users,dc=openmicroscopy,dc=org
+dn: ou=Users,dc=nightingale,dc=emis
 objectClass: organizationalUnit
 objectClass: top
 ou: Users
 
-dn: ou=Groups,dc=openmicroscopy,dc=org
+dn: ou=Groups,dc=nightingale,dc=emis
 objectClass: organizationalUnit
 objectClass: top
 ou: Groups
