@@ -1,0 +1,103 @@
+version: 1
+
+dn: ou=EMIS Staff,dc=nightingale, dc=emis
+ou: EMIS Staff
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Developers, ou=EMIS Staff,dc=nightingale, dc=emis
+ou: Developers
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Testers, ou=EMIS Staff,dc=nightingale, dc=emis
+ou: Testers
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Support, ou=EMIS Staff,dc=nightingale, dc=emis
+ou: Support
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Customer Organisations, dc=nightingale, dc=emis
+ou: Customer Organisations
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=CCG 1, ou=Customer Organisations, dc=nightingale, dc=emis
+ou: CCG 1
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Users, ou=CCG 1, ou=Customer Organisations, dc=nightingale, dc=emis
+ou: Users
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=GP Surgery 1, ou=CCG 1, ou=Customer Organisations, dc=nightingale, dc=emis
+ou: GP Surgery 1
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Users, ou=GP Surgery 1, ou=CCG 1, ou=Customer Organisations, dc=nightingale, dc=emis
+ou: Users
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou= CCG 2, ou=Customer Organisations, dc=nightingale, dc=emis
+ou: CCG 2
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Users, ou=CCG 2, ou=Customer Organisations, dc=nightingale, dc=emis
+ou: Users
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=GP Surgery 2, ou=CCG 2, ou=Customer Organisations, dc=nightingale, dc=emis
+ou: GP Surgery 2
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Users, ou=GP Surgery 2, ou=CCG 2, ou=Customer Organisations, dc=nightingale, dc=emis
+ou: Users
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=GP Surgery 3, ou=CCG 2, ou=Customer Organisations, dc=nightingale, dc=emis
+ou: GP Surgery 3
+objectClass: top
+objectClass: organizationalUnit
+
+dn: ou=Users, ou=GP Surgery 3, ou=CCG 2, ou=Customer Organisations, dc=nightingale, dc=emis
+ou: Users
+objectClass: top
+objectClass: organizationalUnit
+
+
+dn: cn=Maiga Ireland, ou=Users, ou=GP Surgery 3, ou=CCG 2, ou=Customer Organisations, dc=nightingale, dc=emis
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Maiga Ireland
+sn: Ireland
+description: This is Maiga Ireland's description
+facsimileTelephoneNumber: +1 408 539-9044
+l: San Francisco
+postalAddress: Janitorial$San Francisco
+telephoneNumber: +1 408 219-8053
+title: Associate Janitorial Technician
+userPassword: Password1
+uid: IrelandM
+givenName: Maiga
+mail: IrelandM@ns-mail4.com
+carLicense: ACHDYL
+departmentNumber: 3613
+employeeType: Contract
+homePhone: +1 408 222-1116
+initials: M. I.
+mobile: +1 408 168-9065
+pager: +1 408 762-4450
+roomNumber: 9959
