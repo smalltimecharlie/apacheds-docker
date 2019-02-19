@@ -83,21 +83,11 @@ objectClass: organizationalPerson
 objectClass: inetOrgPerson
 cn: Maiga Ireland
 sn: Ireland
-description: This is Maiga Ireland's description
-facsimileTelephoneNumber: +1 408 539-9044
-l: San Francisco
-postalAddress: Janitorial$San Francisco
-telephoneNumber: +1 408 219-8053
+username: IrelandM
+phoneNumber: +1 408 219-8053
+accountStatus: Active
 title: Associate Janitorial Technician
 userPassword: Password1
 uid: IrelandM
 givenName: Maiga
 mail: IrelandM@ns-mail4.com
-carLicense: ACHDYL
-departmentNumber: 3613
-employeeType: Contract
-homePhone: +1 408 222-1116
-initials: M. I.
-mobile: +1 408 168-9065
-pager: +1 408 762-4450
-roomNumber: 9959
