@@ -83,11 +83,37 @@ objectClass: organizationalPerson
 objectClass: inetOrgPerson
 cn: Maiga Ireland
 sn: Ireland
-username: IrelandM
-phoneNumber: +1 408 219-8053
-accountStatus: Active
+description: This is Maiga Ireland's description
+facsimileTelephoneNumber: +1 408 539-9044
+l: San Francisco
+postalAddress: Janitorial$San Francisco
+telephoneNumber: +1 408 219-8053
 title: Associate Janitorial Technician
 userPassword: Password1
 uid: IrelandM
 givenName: Maiga
 mail: IrelandM@ns-mail4.com
+carLicense: ACHDYL
+departmentNumber: 3613
+employeeType: Contract
+homePhone: +1 408 222-1116
+initials: M. I.
+mobile: +1 408 168-9065
+pager: +1 408 762-4450
+roomNumber: 9959
+
+# Create the Groups Container OU
+dn: ou=Client Access Groups, ou=Customer Organisations, dc=nightingale, dc=emis
+objectClass: top
+objectClass: organizationalUnit
+ou: Client Access Groups
+
+# Create a sample group
+dn: cn=Authorised Explorer Users, ou=Client Access Groups, ou=Customer Organisations, dc=nightingale, dc=emis
+objectclass: posixGroup
+cn: Authorised Explorer Users
+description: Users permitted to use the Explorer Nightingale service
+
+
+# Add group member(s)
+member: cn=Maiga Ireland, ou=Users, ou=GP Surgery 3, ou=CCG 2, ou=Customer Organisations, dc=nightingale, dc=emis
