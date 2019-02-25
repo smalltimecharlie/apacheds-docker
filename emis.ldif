@@ -102,18 +102,39 @@ mobile: +1 408 168-9065
 pager: +1 408 762-4450
 roomNumber: 9959
 
-# Create the Groups Container OU
+dn: cn=James Smith, ou=Users, ou=GP Surgery 3, ou=CCG 2, ou=Customer Organisations, dc=nightingale, dc=emis
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: James Smith
+sn: Smith
+description: This is James Smith's description
+l: San Francisco
+postalAddress: Janitorial$San Francisco
+
+dn: cn=Sam Ireland, ou=Users, ou=GP Surgery 3, ou=CCG 2, ou=Customer Organisations, dc=nightingale, dc=emis
+changetype: add
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: Sam Ireland
+sn: Ireland
+description: This is Sam Ireland's description
+l: San Francisco
+postalAddress: Janitorial$San Francisco
+
+# Create the Groups Container OU, Test Group and add members to group
 dn: ou=Client Access Groups, ou=Customer Organisations, dc=nightingale, dc=emis
 objectClass: top
 objectClass: organizationalUnit
 ou: Client Access Groups
-
-# Create a sample group
-dn: cn=Authorised Explorer Users, ou=Client Access Groups, ou=Customer Organisations, dc=nightingale, dc=emis
-objectclass: posixGroup
+dn: cn=Authorised Explorer Users,ou=Client Access Groups,ou=Customer Organisations,dc=nightingale,dc=emis
+objectClass: top
+objectClass: groupOfNames
 cn: Authorised Explorer Users
-description: Users permitted to use the Explorer Nightingale service
-
-
-# Add group member(s)
-member: cn=Maiga Ireland, ou=Users, ou=GP Surgery 3, ou=CCG 2, ou=Customer Organisations, dc=nightingale, dc=emis
+description: Users permitted to use the Nightingale Explorer service
+member: cn=James Smith,ou=Users,ou=GP Surgery 3,ou= CCG 2,ou=Customer Organisations,dc=nightingale,dc=emis
+member: cn=Sam Ireland,ou=Users,ou=GP Surgery 3,ou=CCG 2,ou=Customer Organisations,dc=nightingale, dc=emis
