@@ -45,7 +45,7 @@ ou: Users
 objectClass: top
 objectClass: organizationalUnit
 
-dn: ou= CCG 2, ou=Customer Organisations, dc=nightingale, dc=emis
+dn: ou=CCG 2, ou=Customer Organisations, dc=nightingale, dc=emis
 ou: CCG 2
 objectClass: top
 objectClass: organizationalUnit
@@ -126,11 +126,13 @@ description: This is Sam Ireland's description
 l: San Francisco
 postalAddress: Janitorial$San Francisco
 
-# Create the Groups Container OU, Test Group and add members to group
+# Create the Groups Container OU
 dn: ou=Client Access Groups, ou=Customer Organisations, dc=nightingale, dc=emis
+ou: Client Access Groups
 objectClass: top
 objectClass: organizationalUnit
-ou: Client Access Groups
+
+# Create Group and add memebers
 dn: cn=Authorised Explorer Users,ou=Client Access Groups,ou=Customer Organisations,dc=nightingale,dc=emis
 objectClass: top
 objectClass: groupOfNames
